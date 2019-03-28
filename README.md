@@ -1,6 +1,9 @@
-# QeSeleniumTakeHome
+# Vlocity Quality Engineering Take Home Selenium Test #1
 
-Add additonial tests to the project.  You will be writing Selenium tests against https://www.wikipedia.org/
+This take home test will allow us to evaluate candidates ability to use testNg, Selenium Webdriver, Chrome, Chrome Tools, and Java.
+This take home test requires Java 8, Maven 3, and git.  If you need to adapt it to work with your environment, that is ok, just add comments in the files where appropriate.
+
+The candidate will be writing Selenium tests against https://www.wikipedia.org/
 
 
 ## Verify Feature Languages
