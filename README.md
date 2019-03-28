@@ -6,7 +6,7 @@ This take home test requires Java 8, Maven 3, and git.  If you need to adapt it 
 The candidate will be writing Selenium tests against https://www.wikipedia.org/
 
 ## Verify Featured Languages
-The candidate will write tests to verify the "Featured Languages", such as English, Espanol, etc.  These can be seen in this image.
+The candidate will write tests to verify the **Featured Languages**, such as English, Español, etc.  These can be seen in this image.
 
 ![Wikipedia Image](images/wikipedia-languages.png)
 
