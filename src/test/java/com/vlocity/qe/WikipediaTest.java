@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -17,6 +19,7 @@ public class WikipediaTest {
 
     private WebDriver driver;
     private ElementFinder finder;
+    private Logger log = LoggerFactory.getLogger(WikipediaTest.class);
 
     @BeforeClass
     public void setupChromeDriver() {
@@ -35,8 +38,9 @@ public class WikipediaTest {
 
         Assert.assertNotNull(slogan, String.format("Unable to find slogan div by class: %s", sloganClass));
 
+        log.info("Slogan text is {}", slogan.getText());
+
         Assert.assertEquals(slogan.getText(), "The Free Encyclopedia");
-        System.out.println(slogan.getText());
     }
 
     @AfterClass
@@ -46,5 +50,4 @@ public class WikipediaTest {
             driver.close();
         }
     }
-
 }

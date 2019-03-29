@@ -4,14 +4,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
- * Hello world!
+ * Utility class to wrap Selenium Find methods.
  *
  */
 public class ElementFinder
 {
     private WebDriver driver;
+    private Logger log = LoggerFactory.getLogger(ElementFinder.class);
 
     public ElementFinder(WebDriver driver) {
         this.driver = driver;
@@ -19,6 +22,7 @@ public class ElementFinder
 
     public WebElement findElement(By by) {
 
+        log.info("Using By {}", by.toString());
         WebElement value = null;
 
         try {
