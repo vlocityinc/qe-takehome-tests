@@ -13,21 +13,28 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 /**
- * Unit test for simple ElementFinder.
+ * This class verifies elements on the wikipedia homepage.
  */
 public class WikipediaTest {
 
-    private WebDriver driver;
-    private ElementFinder finder;
     private Logger log = LoggerFactory.getLogger(WikipediaTest.class);
 
-    @BeforeClass
-    public void setupChromeDriver() {
-        WebDriverManager.chromedriver().version("73.0.3683.68").setup();
+    private WebDriver driver;
+    private ElementFinder finder;
 
+    @BeforeClass
+    public void setup() {
+
+        /*
+            If the following driver version doesn't work with your Chrome version
+            see https://sites.google.com/a/chromium.org/chromedriver/downloads
+            and update it as needed.
+        */
+
+        WebDriverManager.chromedriver().version("73.0.3683.68").setup();
         driver = new ChromeDriver();
-        driver.get("https://www.wikipedia.org/");
         finder = new ElementFinder(driver);
+        driver.get("https://www.wikipedia.org/");
     }
 
     @Test
