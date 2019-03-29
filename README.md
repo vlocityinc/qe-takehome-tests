@@ -27,7 +27,13 @@ It is not required that all tests pass, maybe you will find a bug somewhere.  If
 1. Write a test that verifies the hyperlinks for the Featured Languages work, that is, they return a HTTP 200 status.  There should be a test result per language.
 1. Add methods or new classes where you think it is appropriate.
 1. The final tests must execute when `mvn test` is run.
-1. To submit your work, execute `mvn package` and submit the `target/test-results.tgz` file to Greenhouse.
+
+## Submission
+
+To submit your work
+
+1.  Execute `mvn package` which will generate the file `target/test-results.tar.gz`
+1.  Submit the `target/test-results.tar.gz` file to Greenhouse or contact your recruiter for help.
 
 
 
