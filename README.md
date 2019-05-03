@@ -1,4 +1,4 @@
-# Vlocity Quality Engineering Take Home Selenium Test #1
+# Vlocity Quality Engineering Take Home Test
 
 This take home test allows us to evaluate candidates ability to use TestNg, Selenium Webdriver, Chrome, Chrome Tools, and Java.
 
@@ -24,9 +24,9 @@ It is not required that all tests pass, maybe you will find a bug somewhere.  If
 
 1. Use TestNg `@DataProvider(s)`
 1. Write a test that verifies the languages are present by asserting their text value, based on a known list.
-  1. There should be a test result per language.
+    1. There should be a test result per language.
 1. Write a test that verifies the hyperlinks for the Featured Languages work, that is, they return a HTTP 200 status.
-  1. There should be a test result per language.
+    1. There should be a test result per language.
 1. Add methods or new classes where you think it is appropriate.
 1. The final tests must execute when `mvn test` is run.
 
