@@ -23,9 +23,9 @@ It is not required that all tests pass, maybe you will find a bug somewhere.  If
 ## Requirements
 
 1. Use TestNg `@DataProvider(s)`
-1. Write a test that verifies the languages are present by asserting their text value, based on a known list.
+1. Write a test method that verifies the languages are present by asserting their text value, based on a known list of languages.
     1. There should be a test result per language.
-1. Write a test that verifies the hyperlinks for the Featured Languages work, that is, they return a HTTP 200 status.
+1. Write a test method that verifies the hyperlinks for the Featured Languages work, that is, they return a HTTP 200 status.
     1. There should be a test result per language.
 1. Add methods or new classes where you think it is appropriate.
 1. The final tests must execute when `mvn test` is run.
