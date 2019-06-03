@@ -31,7 +31,7 @@ public class WikipediaTest {
             and update it as needed.
         */
 
-        WebDriverManager.chromedriver().version("73.0.3683.68").setup();
+        WebDriverManager.chromedriver().version("74.0.3729.6").setup();
         driver = new ChromeDriver();
         finder = new ElementFinder(driver);
         driver.get("https://www.wikipedia.org/");

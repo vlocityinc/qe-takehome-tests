@@ -9,6 +9,7 @@
   <url>http://www.vlocity.com</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.jdk>1.8</java.jdk>
   </properties>
   <dependencies>
     <dependency>
@@ -60,6 +61,16 @@
           <suiteXmlFiles>
             <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
           </suiteXmlFiles>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.2</version>
+        <configuration>
+          <source>${java.jdk}</source>
+          <target>${java.jdk}</target>
+          <encoding>UTF-8</encoding>
         </configuration>
       </plugin>
     </plugins>
