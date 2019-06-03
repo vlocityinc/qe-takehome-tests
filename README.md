@@ -35,7 +35,7 @@ It is not required that all tests pass, maybe you will find a bug somewhere.  If
 To submit your work
 
 1.  Execute `mvn package` which will generate the file `target/test-results.tar.gz`
-1.  Submit the `target/test-results.tar.gz` file to Greenhouse or contact your recruiter for help.
+1.  Submit the `target/qe-selenium-test-results.tar.gz` file to Greenhouse or contact your recruiter for help.
 
 
 
