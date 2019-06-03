@@ -2,6 +2,12 @@
 
 This take home test allows us to evaluate candidates ability to use TestNg, Selenium Webdriver, Chrome, Chrome Tools, and Java.
 
+**You must follow all the instructions in this document.  Read it closely and to the end.  Failure to submit per instructions will result in a rejection.** 
+
+**You must clone this project and submit it according to the instructions.**
+**Do not create your own project from scratch.**
+
+
 This take home test requires:
 
 *	Java 8
