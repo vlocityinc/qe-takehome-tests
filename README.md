@@ -29,6 +29,7 @@ It is not required that all tests pass, maybe you will find a bug somewhere.  If
 ## Requirements
 
 1. Use TestNg `@DataProvider(s)` for **every** `@Test` method you write.
+    1.  However, do **not** use Excel as a DataProvider.  We do not have it installed.  We cannot see your data.  **The submission will be immediately rejected if Excel is used.**
 1. Write a test method that verifies the languages are present by asserting their text value, based on a known list of languages.
     1. There should be a test result per language.
 1. Write a test method that verifies the hyperlinks for the Featured Languages work, that is, they return a HTTP 200 status.
