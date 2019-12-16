@@ -26,12 +26,15 @@ public class WikipediaTest {
     public void setup() {
 
         /*
-            If the following driver version doesn't work with your Chrome version
+            WebDriverManager.chromedriver().setup() should automatically use the right
+             driver for your Chrome version.  If it does not, you can choose a version manually
             see https://sites.google.com/a/chromium.org/chromedriver/downloads
             and update it as needed.
+
+            WebDriverManager.chromedriver().version("74.0.3729.6").setup();
         */
 
-        WebDriverManager.chromedriver().version("74.0.3729.6").setup();
+        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         finder = new ElementFinder(driver);
         driver.get("https://www.wikipedia.org/");
