@@ -12,6 +12,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * This class verifies elements on the wikipedia homepage.
  */
@@ -37,6 +39,10 @@ public class WikipediaTest {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         finder = new ElementFinder(driver);
+
+        // adjust timeout as needed
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
         driver.get("https://www.wikipedia.org/");
     }
 
